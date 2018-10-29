@@ -1,6 +1,8 @@
 var animals = ["Dog", "Cat", "fish", "snake"];
 
 // displayMovieInfo function re-renders the HTML to display the appropriate content
+$(document).ready(function() {
+
 function displayAnimalInfo() {
 
   var animal = $(this).attr("data-name");
@@ -58,6 +60,8 @@ function displayAnimalInfo() {
 
 }
 
+
+
 // Function for displaying movie data
 function renderButtons() {
 
@@ -91,7 +95,9 @@ $("#add-animal").on("click", function(event) {
   // Adding movie from the textbox to our array
   animals.push(animal);
   
-  console.log(animals);
+  console.log(animal);
+
+
 
   // Calling renderButtons which handles the processing of our movie array
   renderButtons();
@@ -102,3 +108,4 @@ $(document).on("click", ".movie-btn", displayAnimalInfo);
 
 // Calling the renderButtons function to display the intial buttons
 renderButtons();
+});
