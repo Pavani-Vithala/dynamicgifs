@@ -1,15 +1,14 @@
 body{
- background-color: blueviolet;
+ background-color: grey;
 }
 
 movie-form{
 
-    margin-left:100px;
+    margin-right:0px;
 }
+#add-animal,#buttons-view{
 
-   /* button,
-    div,
-    form,
-    input {
-      margin: 10px;*/
-    
+    background-color:teal;
+    color:white;
+}
+   
