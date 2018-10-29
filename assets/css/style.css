@@ -4,16 +4,14 @@ body{
 
 movie-form{
 
-    margin-right:0px;
+    margin-right:1px;
 }
-/*#add-animal,#buttons-view{
-
-    background-color:teal;
-    color:white;
-}*/
 
 
 button,div{
     margin:10px;
 }
    
+label{
+    white-space:nowrap;
+}

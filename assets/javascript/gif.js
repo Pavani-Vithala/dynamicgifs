@@ -35,8 +35,8 @@ function displayAnimalInfo() {
       var rating = results[i].rating;
      console.log("Rating is" + rating);
      var pOne = $("<p>").text("Rating: " + rating);
-
-      imgURL = results[i].images.fixed_height.url;
+      //var str = "480w_still";
+      imgURL = results[i].images.fixed_height_still.url;
       console.log(imgURL);
      
     var image = $("<img>").attr("src", imgURL);
