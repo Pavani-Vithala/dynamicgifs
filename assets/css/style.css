@@ -6,9 +6,14 @@ movie-form{
 
     margin-right:0px;
 }
-#add-animal,#buttons-view{
+/*#add-animal,#buttons-view{
 
     background-color:teal;
     color:white;
+}*/
+
+
+button,div{
+    margin:10px;
 }
    

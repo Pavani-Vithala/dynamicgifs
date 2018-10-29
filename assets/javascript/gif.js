@@ -76,6 +76,10 @@ function renderButtons() {
     // Providing the initial button text
     a.text(animals[i]);
     // Adding the button to the buttons-view div
+   // $(".animal-btn").attr("background-color","teal");
+    $('.animal-btn').css({"background-color":"teal"});
+   // $(".animal-btn").attr("color","white").
+
     $("#buttons-view").append(a);
   }
 }
