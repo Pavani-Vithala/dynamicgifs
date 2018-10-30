@@ -36,10 +36,16 @@ function displayAnimalInfo() {
      console.log("Rating is" + rating);
      var pOne = $("<p>").text("Rating: " + rating);
       //var str = "480w_still";
-      imgURL = results[i].images.fixed_height_still.url;
-      console.log(imgURL);
+      var imgURL1 = results[i].images.fixed_height_still.url;
+      var imgURL2 = results[i].images.fixed_height.url;
+      
      
-    var image = $("<img>").attr("src", imgURL);
+    var image = $("<img>").attr("src", imgURL1);
+    image.addClass("gif");
+    image.attr("data-animate",imgURL2);
+    image.attr("data-still",imgURL1);
+    
+
 
     // Appending the image
     animalDiv.append(pOne);
@@ -106,5 +112,21 @@ $("#add-animal").on("click", function(event) {
 $(document).on("click", ".animal-btn", displayAnimalInfo);
 
 // Calling the renderButtons function to display the intial buttons
-
+$(".gif").on("click", function() {
+  // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+  var state = $(this).attr("data-state");
+  // If the clicked image's state is still, update its src attribute to what its data-animate value is.
+  // Then, set the image's data-state to animate
+  // Else set src to the data-still value
+  console.log("The state of Gif is "+ state);
+  console.log("Entered gif click function");
+  console.log(this);
+  if (state === "still") {
+    $(this).attr("src", $(this).attr("data-animate"));
+    $(this).attr("data-state", "animate");
+  } else {
+    $(this).attr("src", $(this).attr("data-still"));
+    $(this).attr("data-state", "still");
+  }
+});
 });
