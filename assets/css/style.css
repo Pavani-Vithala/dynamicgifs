@@ -8,10 +8,16 @@ movie-form{
 }
 
 
-button,div{
+button,div,{
     margin:10px;
+    float:right;
 }
    
 label{
     white-space:nowrap;
 }
+/*#animal-view
+{
+    float:left;
+    
+}*/
