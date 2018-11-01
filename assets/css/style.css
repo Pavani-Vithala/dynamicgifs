@@ -15,9 +15,13 @@ button,div,{
    
 label{
     white-space:nowrap;
-}
-/*#animal-view
-{
-    float:left;
     
-}*/
+}
+#animal-form{
+    float:right;
+    margin-right:0px;
+}
+.far,.fa-heart
+{
+display:none;
+}
