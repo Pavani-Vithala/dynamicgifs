@@ -40,7 +40,9 @@ $(document).ready(function () {
         animalDiv_i.append(pTwo);
         animalDiv_i.append(image_i);
         animalDiv_i.css('float', 'left');
-        animalDiv_i.css('margin-right', '5px');
+        animalDiv_i.css('margin', '5px');
+        animalDiv_i.css('border','solid');
+        animalDiv_i.css('border-width','1px');
         $("#animal-view").prepend(animalDiv_i);
 
 
