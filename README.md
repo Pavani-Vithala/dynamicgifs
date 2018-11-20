@@ -18,3 +18,7 @@ He can then click the animal button added to retreive gifs from Giphy API.
 
 
 The project is maintained by Pavani Vithala and can be contacted on pavani.vithala18@gmail.com
+
+The app can be accessed from the link below
+
+https://pavani-vithala.github.io/dynamicgifs/
